@@ -1,9 +1,23 @@
 :root {
   --primary-color: #9879e9;
+  --white: #fff;
+  --shadow: #EDEDED;
 }
-button {
-  background: var(--primary-color);
+
+.button {
   border:  1px solid transparent;
   padding: 10px 85px;
   border-radius: 30px;
+  box-shadow: 0px 4px 5px var(--shadow);
+}
+
+.type-primary {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.type-secondary {
+  background: transparent;
+  color: var(--primary-color);
+  border:  1px solid var(--primary-color);
 }
