@@ -1,11 +1,29 @@
 import React from 'react'
-import { Button } from '../../atomic/atoms/Button/Button'
+import { Button } from '../../atoms/Button/Button'
 
 export default {
   title : 'Atom/Button',
   component : Button,
+  argTypes: {
+    type: {
+      options: ['primary', 'secondary'],
+      control: { type: 'radio' }
+    }
+  }
 }
 
-export const Primary = () => <Button type='primary'>Primary</Button>
+const Template = (args) => <Button {...args} />;
 
-export const Secondary = () => <Button type='secondary'>Secondary</Button>
+export const Primary = Template.bind({});
+
+Primary.args = {
+  type: 'primary',
+  children: 'Primary',
+};
+
+export const Secondary = Template.bind({});
+
+Secondary.args = {
+  type: 'secondary',
+  children: 'Secondary',
+}
