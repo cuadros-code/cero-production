@@ -22,6 +22,7 @@ Heading.propTypes = {
 }
 
 Heading.defaultProps = {
+  children : 'Primera app',
   color: 'default',
   size: 'md'
 }

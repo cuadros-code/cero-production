@@ -14,15 +14,10 @@ export const Button = ({ type, children }) => {
       { children } 
     </button>
   )
-} 
-
-
+}
 
 Button.propTypes = {
-  /** Contenido boton */
   children: PropTypes.string.isRequired,
-
-  /** Tipo de boton */
   type: PropTypes.oneOf[('primary', 'secondary')]
 };
 
