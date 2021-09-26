@@ -1,4 +1,4 @@
-export const choices = {
+const choices = {
   colors: {
     brand: {
       mediumPurple : '#9879e9',
@@ -8,8 +8,8 @@ export const choices = {
     },
 
     transparent: 'transparent',
-    black: '#000',
-    white: '#fff',
+    black      : '#000',
+    white      : '#fff',
 
     gray: {
       100: '#f7fafc',
@@ -159,8 +159,8 @@ export const choices = {
   },
   fontFamily: {
     serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
-    sans: ['Apercu', 'Arial', 'sans-serif'],
-    mono: ['"Roboto Mono"', 'Consolas', 'monospace']
+    sans : ['Apercu', 'Arial', 'sans-serif'],
+    mono : ['"Roboto Mono"', 'Consolas', 'monospace']
   },
   fontSize: {
     base: {
@@ -179,31 +179,31 @@ export const choices = {
     '6xl': '4rem'
   },
   fontWeight: {
-    hairline: 100,
-    thin: 200,
-    light: 300,
-    normal: 400,
-    medium: 500,
-    semibold: 600,
-    bold: 700,
+    hairline : 100,
+    thin     : 200,
+    light    : 300,
+    normal   : 400,
+    medium   : 500,
+    semibold : 600,
+    bold     : 700,
     extrabold: 800,
-    black: 900
+    black    : 900
   },
   lineHeight: {
-    none: 1,
-    tight: 1.25,
-    snug: 1.375,
-    normal: 1.5,
+    none   : 1,
+    tight  : 1.25,
+    snug   : 1.375,
+    normal : 1.5,
     relaxed: 1.625,
-    loose: 2
+    loose  : 2
   },
   letterSpacing: {
     tighter: '-.05em',
-    tight: '-.025em',
-    normal: '0',
-    wide: '.025em',
-    wider: '.05em',
-    widest: '.1em'
+    tight  : '-.025em',
+    normal : '0',
+    wide   : '.025em',
+    wider  : '.05em',
+    widest : '.1em'
   },
   // prettier-ignore
   shadows: {
@@ -227,31 +227,31 @@ export const choices = {
     }
   },
   minHeight: {
-    '0': '0',
-    full: '100%',
+    '0'   : '0',
+    full  : '100%',
     screen: '100vh'
   },
   minWidth: {
-    '0': '0',
+    '0' : '0',
     full: '100%'
   },
   opacity: {
-    '0': '0',
-    '25': '0.25',
-    '50': '0.5',
-    '75': '0.75',
+    '0'  : '0',
+    '25' : '0.25',
+    '50' : '0.5',
+    '75' : '0.75',
     '100': '1'
   },
   borderRadius: {
     none: '0',
-    sm: '0.125rem',
-    md: '0.25rem',
-    lg: '0.5rem',
+    sm  : '0.125rem',
+    md  : '0.25rem',
+    lg  : '0.5rem',
     full: '9999px'
   },
   zIndex: {
     auto: 'auto',
-    '0': '0',
+    '0' : '0',
     '10': '10',
     '20': '20',
     '30': '30',
@@ -260,8 +260,10 @@ export const choices = {
   }
 }
 
-export const decisions = {
+const decisions = {
   colors: {
     primary: choices.colors.brand.mediumPurple
   }
 }
+
+module.exports = { choices, decisions }
